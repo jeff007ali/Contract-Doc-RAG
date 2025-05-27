@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contract PDF Viewer with Q&A</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel: PDF Viewer -->
+    <div class="left-panel">
+      <h2>Contract PDF Viewer</h2>
+      
+      <input type="file" id="pdf-upload" accept="application/pdf" />
+      <button id="upload-btn">Upload PDF</button>
+
+      <div class="pdf-controls">
+        <button id="prev-page">Previous</button>
+        <span>Page: <span id="page-num">1</span> / <span id="page-count">?</span></span>
+        <button id="next-page">Next</button>
+      </div>
+
+      <div class="pdf-scroll-container">
+        <canvas id="pdf-canvas"></canvas>
+      </div>
+    </div>
+
+    <!-- Right Panel: Chat Q&A -->
+    <div class="right-panel">
+      <h2>Ask a Question</h2>
+      <div id="question-container">
+        <textarea id="question-input" placeholder="Type your question here..."></textarea>
+        <button id="ask-button">Ask</button>
+      </div>
+      
+      <div id="answer-container"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

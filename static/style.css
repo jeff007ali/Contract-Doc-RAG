@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel, .right-panel {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.left-panel {
+  width: 65%;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-controls {
+  margin: 10px 0;
+}
+
+#pdf-upload {
+  margin-bottom: 10px;
+}
+
+.pdf-scroll-container {
+  overflow: auto;
+  flex-grow: 1;
+}
+
+canvas {
+  border: 1px solid #000;
+  width: 100%;
+  height: auto;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px;
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#answer-container {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  font-size: small
+}
+
+#question-container {
+}
